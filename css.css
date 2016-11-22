@@ -1,17 +1,33 @@
 .page{
-	background-color:#D2E9F0;
+    background-color:#D2E9F0;
 }
 
-.body{
-	margin: 0 auto;
+@media (max-width: 2000px) { 
+  .row{
+    margin: 0 auto;
+    width: 70%;
+    }
+}
+
+@media (max-width: 1259px) {
+  .row{
+    margin: 0 auto;
     width: 80%;
+    }
  }
 
-.header{
-	font-size: 40px;
-	color: #00008B;
-	text-align: center;
-	font-weight:bold;
+ @media (max-width: 779px) {
+  .row{
+    margin: 0 auto;
+    width: 90%;
+    }
+ }
+
+ .header{
+    font-size: 40px;
+    color: #00008B;
+    text-align: center;
+    font-weight:bold;
 }
 .row { 
     height: 120px; 
@@ -19,10 +35,14 @@
     padding: 5px;
     padding-right: 20px; 
     border: solid 1px black; 
+    position:relative;
    }
 
 .img{
-height: 100px;
-width: 100px;
-float: left;
+    width: 10%;
+    float: left;
+}
+.newsapilink{
+    text-align: right;
+    font-weight: bold;
 }
